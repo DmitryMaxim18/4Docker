@@ -1,0 +1,75 @@
+<html>
+<head><title>Flask Template Example</title></head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style>
+</style>
+<body>
+  <nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Home Page!</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left" role="button" data-href-template="/add_song/">
+<!--        <button name="Add Songs" class="btn btn-default">Add Song</button>-->
+          <button  class="btn btn-default" onclick="location.href='/add_song/'" type="button">Add Songs</button>
+      </form>
+<!--      <form class="navbar-form navbar-right" role="button">-->
+<!--          <button name="Delete" class="btn btn-default">Delete Song</button>-->
+<!--      </form>-->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class="container">
+        <div class="card card-image" style="background-image: url(https://i.ytimg.com/vi/YqdsLz6Or74/maxresdefault.jpg);">
+            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                <div>
+                    <h3 class="card-title pt-2"><strong>2007: Die Maschinen Kontrollieren Uns</strong></h3>
+                    <h3 class="card-title pt-2"><strong>2008: Mein Wahres Ich</strong></h3>
+                    <h3 class="card-title pt-2"><strong>2010: My Name Is</strong></h3>
+                    <h4 class="card-title pt-2"><strong>2011: My Name Is – The Remixes</strong></h4>
+                    <h5 class="card-title pt-2"><strong>2013: Feuerfalter – Part01</strong></h5>
+                    <h5 class="card-title pt-2"><strong>2014: Feuerfalter – Part02</strong></h5>
+                    <h6 class="card-title pt-2"><strong>2014: Feuerfalter – Special Edition</strong></h6>
+                    <h6 class="card-title pt-2"><strong>2016: 22</strong></h6>
+                    <h6 class="card-title pt-2"><strong>2016: Dj Mixes Single Tracks</strong></h6>
+                    <h6 class="card-title pt-2"><strong>2020: Space Dive</strong></h6>
+                </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for song in songs %}
+            <tr>
+                {% for field in song %}
+                    <td>{{ field }}</td>
+                {% endfor %}
+                <td>
+                    <form method="post" action="/delete_song/">
+                        <input type="hidden" name="song_id" value="{{ song[0] }}">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>

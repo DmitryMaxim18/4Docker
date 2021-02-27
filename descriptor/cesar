@@ -1,0 +1,26 @@
+
+
+Hello World My nam is 39950803- Всем привет Как дела?
+
+
+Noteworthy in Version 1.2.7
+Summary:
+
+Support Gherkin v6 grammar (to simplify usage of Example Mapping)
+Use/Support cucumber-tag-expressions (superceed: old-style tag-expressions)
+cucumber-tag-expressions are extended by “tag-matching” to match partial tag names, like: @foo.*
+Support Gherkin v6 Grammar
+Grammar changes:
+
+Rule concept added to better correspond to Example Mapping concepts
+Add aliases for Scenario and Scenario Outline (for similar reasons)
+A Rule (or: business rule) allows to group multiple Scenario(s)/Example(s):
+
+# -- RULE GRAMMAR PSEUDO-CODE:
+@tag1 @tag2
+Rule: Optional Rule Title...
+    Description?        #< CARDINALITY: 0..1 (optional)
+    Background?         #< CARDINALITY: 0..1 (optional)
+    Scenario*           #< CARDINALITY: 0..N (many)
+    ScenarioOutline*    #< CARDINALITY: 0..N (many)
+Gherkin v6 keyword aliases:
