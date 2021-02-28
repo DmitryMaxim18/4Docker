@@ -2,8 +2,9 @@ FROM jenkins/jenkins:lts-alpine
 USER root
 
 RUN mkdir -p /usr/src/rep/
+
 WORKDIR /usr/src/rep
-VOLUME /Users/dmytro.maksymov/.jenkins /var/jenkins_home
+
 COPY . /usr/src/rep/
 
 EXPOSE 8080
