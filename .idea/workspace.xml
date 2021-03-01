@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8dd38ca4-12fa-49c4-ac71-ba8c7a4906b8" name="Default Changelist" comment="" />
+    <list default="true" id="8dd38ca4-12fa-49c4-ac71-ba8c7a4906b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regular/req.txt" beforeDir="false" afterPath="$PROJECT_DIR$/req.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZCf7723lhrVT9qf6JgGYbwlDJR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,8 +31,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/regular/tests/csv" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -187,6 +195,14 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2345" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1606310482348" />
+    <state x="2568" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1614472133796">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2568" y="294" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1614472133796" />
+    <state x="2513" y="154" key="CommitChangelistDialog2" timestamp="1614471294400">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2513" y="154" key="CommitChangelistDialog2/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1614471294400" />
     <state width="949" height="226" key="GridCell.Tab.0.bottom" timestamp="1614428760851">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
@@ -223,10 +239,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state width="949" height="252" key="GridCell.Tab.1.right/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1613668669110" />
-    <state x="2389" y="190" key="SettingsEditor" timestamp="1612828422087">
+    <state x="2389" y="190" key="SettingsEditor" timestamp="1614472577241">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
-    <state x="2389" y="190" key="SettingsEditor/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1612828422087" />
+    <state x="2389" y="190" key="SettingsEditor/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1614472577241" />
     <state x="2020" y="123" width="1720" height="857" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1614289448197">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
@@ -235,15 +251,11 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="1979" y="23" width="1720" height="857" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1607014478558" />
-    <state x="2559" y="374" key="com.intellij.ide.util.TipDialog" timestamp="1613990803181">
+    <state x="2559" y="374" key="com.intellij.ide.util.TipDialog" timestamp="1614472191389">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2559" y="374" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1612181094265" />
-    <state x="2559" y="374" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1613990803181" />
-    <state x="2549" y="220" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605831006592">
-      <screen x="1920" y="23" width="1920" height="1057" />
-    </state>
-    <state x="2549" y="220" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1605831006592" />
+    <state x="2559" y="374" key="com.intellij.ide.util.TipDialog/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1614472191389" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
