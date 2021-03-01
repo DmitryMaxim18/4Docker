@@ -16,6 +16,12 @@ class TestLogin:
     def test_example(self):
         assert 1 == 1
 
+    @pytest.mark.shallow
+    def test_example_2(self):
+        import time
+        time.sleep(5)
+        assert 1 == 1
+
     @pytest.mark.parametrize("name, passw", [("tomsmith", "SuperSecretPassword!"), ("tomsmith", "SuperSecretPassword!!")])
     def test_valid_credentials_2(self, login, name, passw):
         login.with_(name, passw)
