@@ -3,10 +3,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout([
-                    $class: 'GitSCM', branches: [[name: '*/main']],
-                    userRemoteConfigs: [[url: 'https://github.com/DmitryMaxim18/4Docker.git'],[credentialsId:'test_pipeline']]
-                ])
+                git branch: 'main',
+                    credentialsId: 'test_pipeline',
+                    url: 'https://github.com/DmitryMaxim18/4Docker.git'
                 echo 'Hello World'
                 sh 'ls'
             }
