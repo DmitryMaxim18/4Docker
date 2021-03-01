@@ -1,17 +1,18 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            agent {
-                node {
-                    label 'www'
-                    customWorkspace '/usr/src/rep/regular/'
-                }
-            }
+        stage('Checkout') {
             steps {
                 echo 'Hello World'
-                sh 'pwd'
+                script {
+                    git credentialsId: 'test_pipeline', url: 'https://github.com/DmitryMaxim18/4Docker.git'
+                    sh 'git checkout */main'
+                }
                 sh 'ls'
+            }
+        }
+        stage('Preparing') {
+            steps {
                 sh 'python3 -m pip install -r req.txt'
             }
         }
