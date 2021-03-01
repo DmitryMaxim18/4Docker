@@ -16,12 +16,12 @@ pipeline {
             }
         }
         stage('Run') {
-            agent {
-                node {
-                    label 'www'
-                    customWorkspace '/usr/src/rep/regular'
-                }
-            }
+//             agent {
+//                 node {
+//                     label 'www'
+//                     customWorkspace '/usr/src/rep/regular'
+//                 }
+//             }
             steps {
                 sh 'pytest -n 5 -m shallow --junitxml=result.xml'
             }
