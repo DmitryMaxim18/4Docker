@@ -5,7 +5,7 @@ pipeline {
             agent {
                 node {
                     label 'www'
-                    customWorkspace '/usr/src/rep/regular/regular/regular/'
+                    customWorkspace '/usr/src/rep/regular/'
                 }
             }
             steps {
