@@ -2,11 +2,11 @@ pipeline {
     agent any
     stages {
         stage('Checkout') {
-            checkout([
-                $class: 'GitSCM', branches: [[name: '*/main']],
-                userRemoteConfigs: [[url: 'https://github.com/DmitryMaxim18/4Docker.git'],[credentialsId:'test_pipeline']]
-            ])
             steps {
+                checkout([
+                    $class: 'GitSCM', branches: [[name: '*/main']],
+                    userRemoteConfigs: [[url: 'https://github.com/DmitryMaxim18/4Docker.git'],[credentialsId:'test_pipeline']]
+                ])
                 echo 'Hello World'
                 sh 'ls'
             }
