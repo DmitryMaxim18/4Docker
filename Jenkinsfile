@@ -10,6 +10,8 @@ pipeline {
             }
             steps {
                 echo 'Hello World'
+                sh 'pwd'
+                sh 'ls'
                 sh 'python3 -m pip install -r req.txt'
             }
         }
