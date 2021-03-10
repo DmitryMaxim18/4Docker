@@ -7,10 +7,10 @@ class TestLogin:
     def login(self, driver):
         return login_page.LoginPage(driver)
 
-    # @pytest.mark.shallow
-    # def test_valid_credentials_1(self, login):
-    #     login.with_("tomsmith", "SuperSecretPassword!")
-    #     assert login.success_message_present()
+    @pytest.mark.shallow
+    def test_valid_credentials_1(self, login):
+        login.with_("tomsmith", "SuperSecretPassword!")
+        assert login.success_message_present()
 
     @pytest.mark.shallow
     def test_example(self):
