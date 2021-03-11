@@ -23,7 +23,7 @@ pipeline {
 //                 }
 //             }
             steps {
-                sh 'pytest -n 5 -m shallow --browser=chrome --browserversion=89 --junitxml=result.xml'
+                sh ['pytest -n 5 -m shallow', '--browser','chrome', '--browserversion', '89', '--junitxml', 'result.xml']
             }
             post {
                 always {
