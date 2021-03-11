@@ -18,7 +18,7 @@ def pytest_addoption(parser):
                      help="where to run your tests: localhost or selenoid")
     parser.addoption("--browserversion",
                      action="store",
-                     default="85.0",
+                     default="89",
                      help="the browser version you want to test with")
 
 
