@@ -271,11 +271,15 @@ from selenium.webdriver.remote.file_detector import LocalFileDetector
 # a = [1, 2, 3, 4]
 # print(a[1:3])
 
-i = 5
-lst = [1, 2]
-assert i in lst
+# i = 5
+# lst = [1, 2]
+# assert i in lst
 
+dd = {
+    "by": 'ID', "value": 'hello'
+}
 
-
+a = 1,
+print(type(a))
 
 

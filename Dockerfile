@@ -20,4 +20,23 @@ RUN apk update \
 RUN apk add pkgconf
 RUN apk add build-base
 RUN apk add python3-dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+#RUN wget https://github.com/aerokube/cm/releases/download/1.5.7/cm_linux_amd64
+#RUN chmod +x ./cm_linux_amd64
+#RUN ./cm_linux_amd64 selenoid start --vnc
+#RUN docker pull selenoid/chrome:85.0
+#RUN yum install docker-engine -y
+#RUN service docker start
 #&& apt-get -y install python3-pip

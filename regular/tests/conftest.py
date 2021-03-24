@@ -45,8 +45,8 @@ def driver(request):
             chromeOptionsRemote = webdriver.ChromeOptions()
             chromeOptionsRemote.add_argument('--window-size=1920,1080')
             chromeOptionsRemote.add_argument("--disable-session-crashed-bubble")
-            driver = webdriver.Remote(options=chromeOptionsRemote, command_executor='http://192.168.0.194'
-                                                                                    ':80/wd/hub',
+            driver = webdriver.Remote(options=chromeOptionsRemote, command_executor='http://192.168.0.195'
+                                                                                    ':4444/wd/hub',
                                       desired_capabilities=desiredCapabilities)
         elif config.browser == 'firefox':
             desiredCapabilities = {

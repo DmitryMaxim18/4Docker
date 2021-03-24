@@ -1,9 +1,9 @@
 {
 	"firefox": {
-		"default": "82",
+		"default": "85",
 		"versions": {
-			"82": {
-				"image": "selenoid/firefox:82",
+			"85": {
+				"image": "selenoid/firefox:85.0",
 				"port": "4444",
 				"path": "/wd/hub",
 				"tmpfs": {"/tmp":"size=512m"}
@@ -11,10 +11,10 @@
 		}
 	},
 	"chrome": {
-		"default": "82",
+		"default": "89",
 		"versions": {
-			"82": {
-				"image": "selenoid/chrome:82",
+			"89": {
+				"image": "selenoid/chrome:89.0",
 				"port": "4444",
 				"tmpfs": {"/tmp":"size=512m"}
 			}

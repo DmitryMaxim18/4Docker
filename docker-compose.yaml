@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3'
 
 volumes:
   jenkins-home:
@@ -8,16 +8,24 @@ services:
     network_mode: bridge
     image: aerokube/selenoid:latest-release
     volumes:
-      - /Users/dmytro.maksymov/PycharmProjects/self/config:/etc/selenoid
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /Users/dmytro.maksymov/PycharmProjects/self/config/video:/opt/selenoid/video
-      - /Users/dmytro.maksymov/PycharmProjects/self/config/logs:/opt/selenoid/logs
+      - "/Users/dmytro.maksymov/PycharmProjects/self/config:/etc/selenoid"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/Users/dmytro.maksymov/PycharmProjects/self/config/video:/opt/selenoid/video"
+      - "/Users/dmytro.maksymov/PycharmProjects/self/config/logs:/opt/selenoid/logs"
     environment:
       - OVERRIDE_VIDEO_OUTPUT_DIR=/video
     command: ["-conf", "/etc/selenoid/browsers.json", "-limit", '7', "-video-output-dir", "/opt/selenoid/video", "-log-output-dir", "/opt/selenoid/logs"]
     ports:
       - 4444:4444
     restart: always
+  selenoid-ui:
+    image: "aerokube/selenoid-ui"
+    network_mode: bridge
+    links:
+      - selenoid
+    ports:
+      - 8080:8080
+    command: ["--selenoid-uri", "http://selenoid:4444"]
   jenkins:
     container_name: jenkins777
     build: .
