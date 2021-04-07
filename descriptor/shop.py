@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import json
 import random
 import string
@@ -275,11 +276,77 @@ from selenium.webdriver.remote.file_detector import LocalFileDetector
 # lst = [1, 2]
 # assert i in lst
 
-dd = {
-    "by": 'ID', "value": 'hello'
-}
+# import os
+# import platform
+# from dotenv import load_dotenv
+# load_dotenv()
+#
+# version = platform.python_version()
+#
+# user_name = os.environ.get('USER')
+# password = os.environ.get('PASSWORD')
+# print(password, user_name)
+# x = 0
+# print(f'x is {x:<09}')
 
-a = 1,
-print(type(a))
+# def nums():
+#     yield 1
+#     yield 2
+#     yield 3
+#     yield 4
+#     yield 5
+#     yield 6
+#
+#
+# generator = nums()
+#
+#
+# def next_iter(gen):
+#     return next(gen, None)
+#
+#
+# lst = [1, 2, 4, 5, 6, 7, 8, 4]
+# for i in lst:
+#     if i % 2 == 0:
+#         print(f" iter: {next_iter(generator)}")
+#
+# print(next_iter(generator))
+
+from collections import Counter
 
 
+# def josephus_survivor(n, k):
+#     v = 0
+#     for i in range(1, n + 1):
+#         v = (v + k) % i
+#     return v + 1
+#
+# print(josephus_survivor(7, 3))
+
+
+def josephus_survivor(n, k):
+    ls = list(range(1, n + 1))
+
+    k -= 1
+    index = k
+    while len(ls) > 1:
+        if index >= len(ls):
+            index = index % len(ls)
+
+        ls.pop(index)
+        index = (index + k) % len(ls)
+    return ls[0]
+
+    start = 0
+    index = start + k-1
+    lst = list(range(1, n + 1))
+    while len(lst) != 1:
+        if index % len(lst) == 0:
+            index = len(lst) - 1
+        if len(lst) == 2:
+            index = k - 1
+        lst.pop(index % len(lst))
+        index += k-1
+    return lst[0]
+
+print(josephus_survivor(11, 19))
