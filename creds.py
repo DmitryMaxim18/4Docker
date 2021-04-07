@@ -1,4 +1,5 @@
 def compare_creds(user=None):
+    print(f" USER:{user}")
     assert user == 'DmitryMaxim18'
 
 

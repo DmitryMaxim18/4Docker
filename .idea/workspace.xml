@@ -52,8 +52,8 @@
       <recent name="$PROJECT_DIR$/regular/features" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.shop">
-    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.creds">
+    <configuration name="creds" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="self" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,11 +61,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/regular" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regular/tests/conftest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creds.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,18 +147,18 @@
     </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
-      <item itemvalue="Python.conftest" />
       <item itemvalue="Python.shop" />
       <item itemvalue="Python.some_class" />
       <item itemvalue="Python.some_module" />
+      <item itemvalue="Python.creds" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.creds" />
         <item itemvalue="Python.shop" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Python.some_class" />
         <item itemvalue="Python.some_module" />
-        <item itemvalue="Python.conftest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,26 +196,26 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2513" y="154" key="CommitChangelistDialog2/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1614471294400" />
-    <state width="949" height="252" key="GridCell.Tab.0.bottom" timestamp="1617832252787">
+    <state width="949" height="227" key="GridCell.Tab.0.bottom" timestamp="1617833218277">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state width="949" height="252" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1617752226340" />
-    <state width="949" height="252" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617832252787" />
-    <state width="949" height="252" key="GridCell.Tab.0.center" timestamp="1617832252786">
+    <state width="949" height="227" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617833218277" />
+    <state width="949" height="227" key="GridCell.Tab.0.center" timestamp="1617833218276">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state width="949" height="252" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1617752226339" />
-    <state width="949" height="252" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617832252786" />
-    <state width="949" height="252" key="GridCell.Tab.0.left" timestamp="1617832252786">
+    <state width="949" height="227" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617833218276" />
+    <state width="949" height="227" key="GridCell.Tab.0.left" timestamp="1617833218276">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state width="949" height="252" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1617752226339" />
-    <state width="949" height="252" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617832252786" />
-    <state width="949" height="252" key="GridCell.Tab.0.right" timestamp="1617832252787">
+    <state width="949" height="227" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617833218276" />
+    <state width="949" height="227" key="GridCell.Tab.0.right" timestamp="1617833218277">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state width="949" height="252" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1617752226339" />
-    <state width="949" height="252" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617832252787" />
+    <state width="949" height="227" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1920.1057@1920.23.1920.1057" timestamp="1617833218277" />
     <state width="949" height="252" key="GridCell.Tab.1.bottom" timestamp="1617832252788">
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
