@@ -5,7 +5,7 @@ def compare_creds(args=None):
     if args is None:
         args = sys.argv
     print('START')
-    print(f" USER:{args[0]}")
+    print(f" USER:{args}")
     assert args[0] == 'DmitryMaxim18'
 
 
