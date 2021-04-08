@@ -6,7 +6,7 @@ def compare_creds(args=None):
         args = sys.argv
     print('START')
     print(f" USER:{args}")
-    assert args[0] == 'DmitryMaxim18'
+    assert args[1] == 'testuser'
 
 
 if __name__ == "__main__": compare_creds()
